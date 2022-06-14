@@ -36,9 +36,10 @@ int main(void)
 				t/=10;
 			}
 
-			if(carry!=0)
+			while(carry!=0)
 			{
-				arr[++index]=carry;
+				arr[++index]=carry%10;
+				carry/=10;
 			}
 
 		}
